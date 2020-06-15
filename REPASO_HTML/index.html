@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <head>
+        <title>REPASO HTML</title>
+    </head>
+    <body>
+        <!--Títulos (podemos tener de h1 hast h6)-->
+        <!-- la etiqueta strong pone texto en 
+        negrita
+
+        la etiqueta em es para poner texxto en cursvia
+    -->
+        <h1>TITULO 1</h1>
+        <br/>
+        <h2><em>TITULO 2</em></h2>
+        <hr/>
+        <h3>Cabo verde</h3>
+        <hr/>
+        <!--insertar imagenes en html
+            el atributo alt nos sirve para mostrar
+            texto cuando la imagen no cargue
+        -->
+
+        <img  src= "imagenes/verde.jpg" alt="cabo verde archipiélago" width="250px">
+        <hr/>
+
+        <!--saltos de línea la etiqueta br es para 
+            cuando queremos que sea en blanco si le colocamos hr
+            es para que se dibuje
+        
+            la etiqueta span sirve para poder 
+            identificar ciertos elementos dentro del dom
+        -->
+
+       <!--etiquetas para párrafos--> 
+                <P><strong>jflkdasjflkadjflkjldkf</strong></P>
+                
+                <!--la etiqueta blockquote 
+                hace que el contenido que esté dentro de esta
+            sea una cita-->
+
+            <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae enim tempor dui dignissim interdum vel laoreet risus. Cras maximus rhoncus sem, eu accumsan lorem dictum et. Donec ut condimentum tortor. 
+                Aliquam lacus ex, dapibus vel enim iaculis, tempor fermentum odio. Etiam ut erat quis nibh tempor hendrerit. Aliquam commodo erat velit. Nulla in luctus nibh. Vivamus pharetra elit eu massa condimentum accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla quis mauris ac lectus fermentum laoreet. Morbi in ligula quis neque venenatis scelerisque. 
+            </blockquote>
+
+            <!--para hacer una lista ordenada (numeración)-->
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento N</li>
+            </ol>
+
+            <!--listas desordenadas-->
+            <ul>
+                <li>desorden 1</li>
+                <li>desorden 2</li>
+                <li>desorden 3</li>
+            </ul>
+
+            <br/>
+
+            <h3><span>Creando formato de tabla en html</span></span></h3>
+            <table border="2">
+                <!--Creando una fila-->
+                <tr>
+                    <!--creando columna, la etiqueta th se usa p
+                    para poner en negrita el encabezado de la tabla
+                el atributo colspan es para expandir la cantidad de estas-->
+                    <th colspan="3">Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                </tr>
+
+                <tr>
+                    <td colspan="3">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+
+            </table>
+            <br>
+
+            <h3>Creando un formulario</h3>
+            <form>
+
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <!--la etiqueta placeholder 
+                        nos sirve para colocar
+                    texto predefinido antes de ingresar 
+                    nuevos valores en él-->
+                    <input type="text" name="nombre"/ placeholder="ingrese su nombre">
+                </p>
+
+                <p>
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion"></textarea>
+                </p>
+
+                <!--vamos a crear radiobuttoms-->
+                <input type="radio" name="genero" value="hombre"> Hombre <br/>
+                <input type="radio" name="genero" value="mujer">Mujer</br>
+
+                <!--un select nos sirve para
+                
+                El elemento select (<select>) de HTML representa un control que muestra 
+                    un menú de opciones. Las opciones contenidas en el menú 
+                    son representadas 
+                    por elementos <option>, los cuales pueden ser agrupados por elementos
+                         <optgroup>. 
+                    La opcion puede estar preseleccionada por el usuario.
+                -->
+
+                <select name="opciones">
+                    <option  value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <!--botón para enviar el formulario-->
+                <input type="submit" value="enviar formulario" name="envio"/>
+                
+            </form>
+
+    </body>
+
+</html>
