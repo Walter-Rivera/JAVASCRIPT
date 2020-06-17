@@ -1,5 +1,5 @@
-'strict'
+'use strict'
 
 var numero=8;
-
-console.log("variable tipo numero    "+numero);
+var pais="España";
+console.log("variable tipo   "+typeof(numero)+"  valor   "+numero);
