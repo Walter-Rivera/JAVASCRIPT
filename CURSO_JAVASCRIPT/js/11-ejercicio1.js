@@ -2,11 +2,8 @@
 
 /*programa que pida dos numeros y determine el mayor, menor o si son iguales*/
 
-var numero1 = prompt("ingrese primer numero",0);
-var numero2 = prompt("ingrese segundo numero",0);
-
-var val1=parseFloat(numero1);
-var val2=parseFloat(numero2);
+var val1 = parseFloat(prompt("ingrese primer numero",0));
+var val2 = parseFloat(prompt("ingrese segundo numero",0));
 
     if(val1>val2)
     {
