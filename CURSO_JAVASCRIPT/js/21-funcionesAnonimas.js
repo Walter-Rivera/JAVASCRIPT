@@ -19,7 +19,8 @@ sumar(5,7,
         console.log("la suma de los 2 numeros es:   "+dato);
 
     },
-    function(dato)
+    /*función tipo flecha, es lo mismo que la de arriba (llamadas de callback)*/ 
+    (dato)=>
     {
         console.log("la multiplicación x 2 es:    "+(dato*2));
     }
