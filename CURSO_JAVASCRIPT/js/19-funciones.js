@@ -13,6 +13,29 @@ function mostrar_texto()
 console.log(mostrar_texto());
 */
 
+/*vamos a crear 2 funciones, una que muestre los resultados de la calculadora
+por consola y la otra en el alert*/
+
+
+function por_consola(numero1,numero2)
+{
+    console.log("la suma entre los  2 numeros es:    "+(numero1+numero2));
+    console.log("la resta entre los 2 numeros es:    "+(numero1-numero2));
+    console.log("la multiplicación entre los 2 números es:    "+(numero1*numero2));
+    console.log("la division entre los 2 números es:   "+(numero1/numero2));
+};
+
+function por_alert(numero1,numero2)
+{
+    var resultados=`
+        la suma entre los dos números es: ${numero1+numero2}
+        la resta entre los dos números es: ${numero1-numero2}
+        la multiplicación entre los dos números es: ${numero1*numero2}
+        la division entre los dos números es: ${numero1/numero2}
+        `;
+        alert(resultados) ;
+};
+
 /*funcion para hacer una calculadora dinámica */
 
 
@@ -20,21 +43,13 @@ function calculadora(numero1,numero2,mostrar=false)
 {
     if(mostrar==false)
     {
-        console.log("la suma entre los  2 numeros es:    "+(numero1+numero2));
-        console.log("la resta entre los 2 numeros es:    "+(numero1-numero2));
-        console.log("la multiplicación entre los 2 números es:    "+(numero1*numero2));
-        console.log("la division entre los 2 números es:   "+(numero1/numero2));
+        por_consola(numero1,numero2);
 
     }
     else
     {
-        var resultados=`
-        la suma entre los dos números es: ${numero1+numero2}
-        la resta entre los dos números es: ${numero1-numero2}
-        la multiplicación entre los dos números es: ${numero1*numero2}
-        la division entre los dos números es: ${numero1/numero2}
-        `;
-        alert(resultados) ;
+        por_alert(numero1,numero2);
+        
     };
     
 };
