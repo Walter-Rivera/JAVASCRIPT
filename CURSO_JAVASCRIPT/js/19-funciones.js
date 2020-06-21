@@ -18,7 +18,8 @@ console.log(mostrar_texto());
 
 function calculadora(numero1,numero2)
 {
-    var resultados=`la suma entre los dos números es: ${numero1+numero2}
+    var resultados=`
+        la suma entre los dos números es: ${numero1+numero2}
         la resta entre los dos números es: ${numero1-numero2}
         la multiplicación entre los dos números es: ${numero1*numero2}
         la division entre los dos números es: ${numero1/numero2}
