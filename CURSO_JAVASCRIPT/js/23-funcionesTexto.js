@@ -74,3 +74,32 @@ console.log("metodo endsWith   "+busqueda7);
 */
 var busqueda8=texto2.includes("Angular");
 console.log("metodo includes   "+busqueda8);
+
+
+
+/*metodo replace*/
+var busqueda9=texto2.replace("Angular","Vue.js");
+console.log("funcion replace :    "+busqueda9);
+
+
+
+/*el método slice nos permite extraer
+un conjunto de caracteres a partir del índice que
+coloquemos, puede llevar 2 parámetros el rango inicial y el final*/
+
+var variable=texto1.slice(4);
+console.log("método slice en JS   "+variable);
+
+
+/*el método split nos permite crear un array a partir de una cadena de texto,
+mandando como parámetro un delimitador para separar las palabras*/
+var variable2 = texto1.split(" ");
+console.log("resultado de método split   : ");
+console.log(variable2);
+
+
+/*El método trim quita espacios por delante y al final de una cadena de caracteres */
+var mensaje= "     uno dos tres cuatro, cinco, seis, siete, ocho    ";
+var variable3=mensaje.trim();
+console.log(" método trim   "+variable3);
+
