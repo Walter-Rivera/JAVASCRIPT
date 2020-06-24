@@ -38,3 +38,4 @@ lenguajes.forEach((elemento, indice,arreglo)=>
     document.write("<li> "+indice+"  "+elemento+ " </li>");
 
 });
+
