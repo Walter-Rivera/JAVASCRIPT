@@ -39,3 +39,11 @@ lenguajes.forEach((elemento, indice,arreglo)=>
 
 });
 
+
+/*ciclo for in */
+
+for (let lenguaje in lenguajes)
+{
+    document.write("<li> "+"  "+lenguaje+ " </li>");
+
+};
