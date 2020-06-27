@@ -44,6 +44,44 @@ lenguajes.forEach((elemento, indice,arreglo)=>
 
 for (let lenguaje in lenguajes)
 {
-    document.write("<li> "+"  "+lenguaje+ " </li>");
+    document.write("<li> "+"  "+lenguajes[lenguaje]+ " </li>");
 
 };
+
+/*funciones de búsqueda */
+
+/*
+FORMA TRADICIONAL DE CALLBACK
+var busqueda = lenguajes.find( function (lenguaje)
+{
+    return lenguaje =="PHP"
+});
+*/
+
+/*Función tipo flecha (callback simplificado) */
+var busqueda = lenguajes.find( lenguaje =>
+
+     lenguaje == "PHP"
+);
+
+console.log("opcion de búsqueda    "+busqueda);
+
+/*el método findIndex nos devuelve el número del índice en el cual
+se encuentra ubicado del archivo*/
+
+var busqueda2 = lenguajes.findIndex(variable =>
+    variable=="GO"
+    );
+
+console.log("buscando el índice "  + busqueda2);
+
+/*el método some regularmente se usa para saber
+si dentro de un array hay valores según se indique en la función, nos
+devuelve true o false,  por ejemplo */
+var precios = [10,20,30,40,50,60,70,80,90,100];
+
+var busqueda3 = precios.some(numero =>
+    numero>=40
+    );
+
+console.log("metodo some:    "+busqueda3);    
