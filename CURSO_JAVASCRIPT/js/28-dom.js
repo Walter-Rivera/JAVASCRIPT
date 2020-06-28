@@ -21,9 +21,7 @@ var divs = document.getElementsByTagName('div');
 var seccion = document.querySelector("#miSeccion");
 var hr = document.createElement("hr");
 
-var valor;
-
-for(valor in divs)
+for( var valor in divs)
 {
     if(typeof divs[valor].textContent=='string')
     {
@@ -36,3 +34,29 @@ for(valor in divs)
 }
 seccion.append(hr);
 
+/*seleccionar elementos por su clase */
+var claseDivs = document.getElementsByClassName('amarillo');
+/*claseDivs[2].style.background="yellow";*/
+
+for(var nombre in divs)
+{
+
+    if(divs[nombre].className=="rojo")
+    {
+        divs[nombre].style.background="red";
+    }
+    else if(divs[nombre].className=="verde")
+    {
+        divs[nombre].style.background="green";
+    }
+    else if(divs[nombre].className=="amarillo")
+    {
+        divs[nombre].style.background="yellow";
+    }
+}
+
+
+var encabezado = document.querySelector("#encabezado");
+console.log(encabezado);
+
+/*https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll */
