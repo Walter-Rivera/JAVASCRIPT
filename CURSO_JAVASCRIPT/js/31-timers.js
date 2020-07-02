@@ -25,6 +25,14 @@ window.addEventListener('load',()=>
     };
     
     var tiempo=Intervalo();
+    /*iniciar / reiniciar el setInterval */
+    var iniciar = document.querySelector("#start");
+
+    iniciar.addEventListener("click",()=>
+    {
+        Intervalo();
+    });
+
 
     /*parar el setInterval */
     var parar = document.querySelector("#stop");
@@ -34,14 +42,7 @@ window.addEventListener('load',()=>
         clearInterval(tiempo);
     });
 
-    /*iniciar / reiniciar el setInterval */
-    var iniciar = document.querySelector("#start");
-
-    iniciar.addEventListener("click",()=>
-    {
-        Intervalo();
-    });
-
+    
 
 
 });
