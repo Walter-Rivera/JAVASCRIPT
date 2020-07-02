@@ -3,10 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <title>Ejercicio DOM, EVENTOS, FUNCIONES con JS</title>
+        <link rel="stylesheet" href="../CURSO_JAVASCRIPT/styles1.css">
+        <script type="text/javascript" src="../CURSO_JAVASCRIPT//js/32-ejercicioDom.js"></script>
 
     </head>
     <body>
         <h1>EJERCICIO SECCION 19 CURSO MS JS</h1>
+        <!--
+            1.- Formulario con campos: Nombre, apellidos, edad.
+            2.- Botón para enviar la información de los campos (usar  el evento submit);
+            3.- Mostrar los datos que envie el formulario por pantalla.
+        -->
+       <div class="Box">
+        <p>
+            <form id="formulario" action="#" method="POST" id="formulario" onsubmit="return false;">
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" name="nombre" id="idNombres" placeholder="Ingrese su nombre"/>
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <br>
+                <input type="text" name="apellidos" id="idApellidos" placeholder="Ingrese sus apellidos">
+                <br>
+                <label for="edad">Edad</label>
+                <br>
+                <input type="number" name="edad" id="idEdad" placeholder="ingres su edad (números)">
+                <br>
+                <br><br>
+                <input type="submit" value="Enviar" id="idEnviar">
+               
+            </form>
+        </p>       
+       </div>
+       <div class="Box dashed">
+           <h3 align="center">información del Usuario</h3>
+           <hr/>
+
+       </div>
+       
         
     </body>
 </html>
