@@ -12,7 +12,28 @@ window.addEventListener('load',()=>
         {
             let nombres = document.querySelector("#idNombres").value;
             let apellidos = document.querySelector("#idApellidos").value;
-            let edad = document.querySelector("#idEdad").value;
+            let edad = parseInt(document.querySelector("#idEdad").value);
+
+
+            if(nombres.trim()==null || nombres.trim().length==0)
+            {
+                alert("Nombre(s) incorrectos");
+                return false;
+            }
+
+            if(apellidos.trim()==null || apellidos.trim().length==0)
+            {
+                alert("apellidos incorrectos");
+                return false;
+            }
+
+            if(edad==null || edad<=0 ||isNaN(edad)==true)
+            {
+                alert("la edad no es válida");
+                return false;
+            }
+
+
 
 
             /*mostramos el segundo cuadro que creamos con html */

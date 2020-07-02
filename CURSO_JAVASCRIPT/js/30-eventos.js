@@ -36,27 +36,27 @@ window.addEventListener('load',()=>
     /*evento al pasar encima del elemento del dom (botón) */
     boton.addEventListener('mouseover',function()
     {
-        boton.style.background="#ccc";
+        this.style.background="#ccc";
 
     });
 
     /*al salir del botón*/
     boton.addEventListener('mouseout',function()
     {
-        boton.style.background="gold";
+        this.style.background="gold";
     });
 
     /*focus*/
     boton.addEventListener('focus', function()
     {
-        boton.innerHTML="cambiando texto";
+        this.innerHTML="cambiando texto";
 
     });
 
     //blur
     boton.addEventListener('blur',function()
     {
-        boton.innerHTML="Presionar";
+        this.innerHTML="Presionar";
     });
 
 
