@@ -9,5 +9,28 @@
 
 /* Here is one of many  CSS rules you will need... */
 #one {
-    
+    border: 5px solid blue;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif, serif;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    float: right;
+
 }
+
+#two {
+    border: 5px solid green;
+    width: 210px;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif, serif;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    float: bottom;
+
+
+};
