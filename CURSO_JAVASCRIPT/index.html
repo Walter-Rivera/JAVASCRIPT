@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Aprendiendo JS</title>
-        <script type="text/javascript" src="../CURSO_JAVASCRIPT/js/34-localStorage.js"> </script>
+        <script type="text/javascript" src="../CURSO_JAVASCRIPT/js/35-ejercicioLocalStorage.js"> </script>
     </head>
     <body>
         <h1>Curso Javascript</h1>
+        <!--
         <p> 
             <button id="boton">Presionar</button> 
             <button id="stop">Stop</button>
@@ -31,7 +32,32 @@
         </section>
         <div id="dato"></div>
 
+        -->
 
+        <form id="formulario">
+            <label for="pelicula">Nombre de la película</label>
+            <br>
+            <input type="text" id="tituloPelicula" placeholder="nombre de película"/>
+            <button id="send" type="submit">Guardar</button>
+            <br>
+        </form>
+
+        <form id="borrarPelicula">
+            <label for="bpelicula">Nombre de la película</label>
+            <br>
+            <input type="text" id="borrartituloPelicula" placeholder="nombre de película"/>
+            <button id="bsend" type="submit">Borrar</button>
+            <br>
+        </form>
+
+
+
+        <h2>Listado de películas</h2> 
+        <div id="listado">
+            <ol id="ordenListado">
+
+            </ol>
+        </div>
 
     </body>
     
