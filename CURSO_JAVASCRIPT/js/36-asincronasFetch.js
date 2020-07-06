@@ -7,16 +7,17 @@ window.addEventListener('load',()=>
     */
 /*escojo el div donde voy a colocar en el html los datos que recupere de la petición */
 var divUusuario = document.querySelector("#usuarios");
-
-  /*declaro una array para guardar los elementos cuando los recupere del url */
-  var usuarios=[];
   
     fetch('https://reqres.in/api/users')
    /*luego adjuntamos una promesa, la cual tiene una función de callback */
    .then(data=>data.json())
    .then(users=>{
-        usuarios=users.data;
-        console.log(usuarios);
+        listadoUsuarios(users.data);
+       
+   });
+
+   function listadoUsuarios(usuarios)
+   {
         usuarios.map((user,i)=>
         {
             let nombresApellidos = document.createElement('h4');    
@@ -25,6 +26,6 @@ var divUusuario = document.querySelector("#usuarios");
             /*al cargar los datos en el dom, eliminamos el mensaje de cargando del div, accedemos a él */
             document.querySelector(".loading").style.display='none';
         });
-   })
-   ;
+   };
+
 });
