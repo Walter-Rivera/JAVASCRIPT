@@ -1,8 +1,4 @@
 
-/* This is a partial blocks.css, you need to add more rules
-   to this file to complete the assignment.  Do not add any CSS
-   styling to the original index.htm / start.htm */
-
    body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -16,21 +12,50 @@
     font-family: 'Times New Roman', Arial, Helvetica, sans-serif, serif;
     font-size: 20px;
     text-align: left;
-    position: relative;
-    float: right;
+    position: absolute;
+    left: 900px;
+    bottom:100px;
 
 }
-
 #two {
-    border: 5px solid green;
-    width: 210px;
+    border: 5px solid green;width: 210px;
+    margin: 10px;padding: 5px;
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif, serif;font-size: 20px;
+    text-align: left;
+    position: absolute;
+    left: 900px;
+}
+
+#three{
+    border: 5px solid orange;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif, serif;
+    font-size: 20px;text-align: left;
+    position: absolute;
+}
+
+#four{
+    border: 5px solid yellow;
+    width: 200px;
     margin: 10px;
     padding: 5px;
     font-family: 'Times New Roman', Arial, Helvetica, sans-serif, serif;
     font-size: 20px;
     text-align: left;
-    position: relative;
-    float: bottom;
+    position: absolute;
+    bottom:100px;
 
+}
 
-};
+#link a
+{
+    position: absolute;
+    left: 550px;
+    background-color: blue;
+    width: 105px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
