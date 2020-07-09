@@ -7,14 +7,33 @@ window.addEventListener('load',()=>
     */
 /*escojo el div donde voy a colocar en el html los datos que recupere de la petición */
 var divUusuario = document.querySelector("#usuarios");
+var divUsuario2 = document.querySelector("#usuario2");
   
-    fetch('https://reqres.in/api/users')
+    
    /*luego adjuntamos una promesa, la cual tiene una función de callback */
+   getUsuarios()
    .then(data=>data.json())
    .then(users=>{
         listadoUsuarios(users.data);
+        return getUsuario2();
        
+   })
+   .then(data=>data.json())
+   .then(user =>{
+     mostraDatosUsuario(user.data);
+
+
    });
+
+   function getUsuarios()
+   {
+       return fetch('https://reqres.in/api/users');
+   }
+
+   function getUsuario2()
+   {
+       return fetch('https://reqres.in/api/users/2');
+   }
 
    function listadoUsuarios(usuarios)
    {
@@ -27,5 +46,21 @@ var divUusuario = document.querySelector("#usuarios");
             document.querySelector(".loading").style.display='none';
         });
    };
+
+
+   function mostraDatosUsuario(user)
+   {
+        
+        let nombresApellidos = document.createElement('h4');  
+        let imagen = document.createElement('img');  
+        nombresApellidos.innerHTML= user.id+"     "+user.first_name+" "+user.last_name;
+        imagen.src=user.avatar;
+        imagen.width='100';
+        divUsuario2.append(nombresApellidos);
+        divUsuario2.append(imagen);
+        /*al cargar los datos en el dom, eliminamos el mensaje de cargando del div, accedemos a él */
+        document.querySelector("#usuario2 .loading").style.display='none';
+   };
+
 
 });
