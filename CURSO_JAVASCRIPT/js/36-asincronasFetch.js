@@ -35,6 +35,26 @@ var divUsuario2 = document.querySelector("#usuario2");
        return fetch('https://reqres.in/api/users/2');
    }
 
+   /*como crear un promesa de terceros*/
+   function getInfo()
+   {
+    var profesor =
+    {
+         nombre: 'fulano',
+         apellidos: 'sutano',
+         url: 'https://www.google.com/'
+    };
+    /*en esta instancia tenemos una función de callback */
+    return new Promise((resolve,reject)=>
+    {
+        /*convertir la información en un JSON-STRING */
+       var profesor_String = JSON.stringify(profesor);
+       /*Si de la conversión no se obtiene  */
+    })     
+   }
+
+
+
    function listadoUsuarios(usuarios)
    {
         usuarios.map((user,i)=>
