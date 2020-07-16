@@ -27,11 +27,19 @@ var divUsuario3 = document.querySelector("#profesor");
    .then(data=>data.json())
    .then(user =>{
      mostraDatosUsuario(user.data);
-   });
+   })
+   /*creando método catch para el manejo de errores en una promesa */
+   .catch
+   ( error => 
+    {
+        alert("muchos errores en las peticiones ajax");
+    }
+
+   );
 
    function getUsuarios()
    {
-       return fetch('https://reqres.in/api/users');
+       return fetch('htt://reqres.in/api/users');
    }
 
    function getUsuario2()
