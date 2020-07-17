@@ -39,7 +39,7 @@ var divUsuario3 = document.querySelector("#profesor");
 
    function getUsuarios()
    {
-       return fetch('htt://reqres.in/api/users');
+       return fetch('https://reqres.in/api/users');
    }
 
    function getUsuario2()
